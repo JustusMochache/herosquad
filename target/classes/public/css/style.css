@@ -72,6 +72,7 @@ nav{
   top: 23px;
   right: 10%;
   font-family: 'Abel', sans-serif;
+  font-size: 30px;
   background: rgb(8, 22, 8);
 }
 nav>ul li{
@@ -87,7 +88,7 @@ nav>ul li{
   justify-content: center;
   margin-top: 15vh;
   min-height: 10vh;
-  background: rgb(8, 22, 8);
+ background: rgb(8, 22, 8);
   color: white;
   box-shadow: 0 0 10px rgba(255,255,255,0.4);
 }
@@ -121,9 +122,11 @@ nav>ul li{
   width: 40%;
   left: 0px;
   margin-top: 5vh;
-  height: 70vh;
+  height: 50vh;
   overflow: hidden;
-  background: url('/img/arrow_1.jpg');
+  background: url('/img/jamie.png');
+
+
   background-position: top center;
   box-shadow: 0 0 20px rgb(24, 44, 13);
   animation: load1 0.8s linear 1;
@@ -167,7 +170,7 @@ nav>ul li{
 }
 .hero-btn:hover{
   background: rgba(255,255,255,0.8);
-  transition: all 0.4s ease;
+  transition: all 0.9s ease;
   color: black;
 }
 .hero-btn::after{
@@ -178,14 +181,14 @@ nav>ul li{
   top: -5px;
   border-radius: 50%;
   left: -35px;
-  transition: all 0.4s ease;
+  transition: all 0.9s ease;
   z-index: 2;
 }
 .hero-btn:hover::after{
   border-color:rgb(209,209,209);
   cursor: pointer;
   left: 92%;
-  transition: all 0.5s ease;
+  transition: all 0.9s ease;
 }
 @keyframes load{
   0%{left: -100vw;}
@@ -199,7 +202,7 @@ nav>ul li{
 }
 
 /*-----------------------------------
-            HERO STATS
+            hero charts and stats design-justus
 -----------------------------------*/
 .hero-stats{
   width: 100%;
@@ -471,8 +474,8 @@ position: absolute;
   margin-bottom: 10px;
   border-radius: 5px;
   text-align: left;
-  transition: all 2s ease;
-  animation: load1 0.5s linear 1;
+  transition: all 9s ease;
+  animation: load1 0.9s linear 1;
 }
 .add-btn{
   background: green;
@@ -495,6 +498,8 @@ position: absolute;
 .member-cont h3{
   display: inline-block;
 }
+
+
 .member-cont .btns{
   position: relative;
   left: 15%;
