@@ -7,6 +7,17 @@
   font-family: 'Abel', sans-serif;
 }
 
+.rotating {
+ height:90px;
+     width:90px;
+     -webkit-animation: spin 5s infinite linear;
+      -webkit-animation: spin 5s infinite linear;
+}
+@-webkit-keyframes spin {
+    0%  {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+
 a{
   text-decoration: none;
 	color: inherit;
@@ -179,7 +190,7 @@ nav>ul li{
 
 .hero-btn:hover{
   background: rgba(255,255,255,0.8);
-  transition: all 0.9s ease;
+  transition: all 7s ease;
   color: black;
 }
 .hero-btn::after{
@@ -190,14 +201,14 @@ nav>ul li{
   top: -5px;
   border-radius: 50%;
   left: -35px;
-  transition: all 0.9s ease;
+  transition: all 7s ease;
   z-index: 2;
 }
 .hero-btn:hover::after{
   border-color:rgb(209,209,209);
   cursor: pointer;
   left: 92%;
-  transition: all 0.9s ease;
+  transition: all 7s ease;
 }
 @keyframes load{
   0%{left: -100vw;}
@@ -511,8 +522,8 @@ position: absolute;
   margin-bottom: 10px;
   border-radius: 5px;
   text-align: left;
-  transition: all 9s ease;
-  animation: load1 0.9s linear 1;
+  transition: all 4s ease;
+  animation: load1 4s linear 1;
 }
 
 .add-btn{
