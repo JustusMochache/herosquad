@@ -6,11 +6,13 @@
   transition: all 0.2s ease-out;
   font-family: 'Abel', sans-serif;
 }
+
 a{
   text-decoration: none;
 	color: inherit;
 	display: inline-block;
 }
+
 .btns{
   border: none;
   cursor: pointer;
@@ -21,15 +23,18 @@ a{
   margin-top: 5px;
 
 }
+
 .btns:hover{
   background: rgb(0, 0, 0);
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.24);
   color: white;
 }
+
 .btn-green{
 	background: green;
 	margin-top: 5px;
 }
+
 html{
   scroll-behavior: smooth;
 }
@@ -42,6 +47,7 @@ body::-webkit-scrollbar,
   width: 5px;
   background-color: rgb(119, 119, 117);
 }
+
 body::-webkit-scrollbar-thumb,
  #newMember::-webkit-scrollbar-thumb{
   background-color: rgb(48, 116, 52);
@@ -145,6 +151,7 @@ nav>ul li{
   text-align: center;
   animation: load 1s linear 1;
 }
+
 .hero-desc>h3{
   font-size: 3.4em;
   text-align: left;
@@ -154,6 +161,7 @@ nav>ul li{
   font-family: serif;
   letter-spacing: 10px;
 }
+
 .hero-btn{
   background: rgb(11, 68, 35);
   color: white;
@@ -168,6 +176,7 @@ nav>ul li{
   outline: none;
   z-index: 5;
 }
+
 .hero-btn:hover{
   background: rgba(255,255,255,0.8);
   transition: all 0.9s ease;
@@ -209,6 +218,7 @@ nav>ul li{
   z-index: 4;
   text-align: center;
 }
+
 .hero-charts>div{
   width: 170px;
   height: 170px;
@@ -224,16 +234,19 @@ nav>ul li{
   text-transform: uppercase;
   transition: all 1s ease;
 }
+
 .hero-charts span{
   display: inline-block;
   position: relative;
   margin-top: 20px;
   font-size: 2.2em;
 }
+
 .hero-charts span::after{
   content: "%";
   font-size: 0.5em;
 }
+
 .hero-stats button{
 	color: white;
 	background: rgb(11, 68, 35);
@@ -256,6 +269,7 @@ nav>ul li{
   margin-top: 10vh;
   font-family: 'Abel', sans-serif;
 }
+
 .form-cont>div{
   background: rgba(255, 255, 255, 0.089);
   position: relative;
@@ -263,6 +277,7 @@ nav>ul li{
   text-align: center;
   padding-top: 40px;
 }
+
 .form-cont>div>a{
   display: inline-block;
   padding: 20px;
@@ -279,10 +294,13 @@ nav>ul li{
   margin-top: 15vh;
 
 }
+
+
 .form>h1{
   color: white;
   font-size: 2.3em;
 }
+
 .form>input[type=text],
 .form>input[type=number]{
   background: none;
@@ -297,9 +315,11 @@ nav>ul li{
   animation: formLd 1.2s linear 1;
   font-size: 1em;
 }
+
 .form>input[type=text]:nth-child(even){
 	animation: formLd 0.8s linear 1;
 }
+
 @keyframes formLd{
 	0%{width: 0%;border-color: green;box-shadow: 0px 2px 2px rgba(255,255,255,0.3);}
 	100%{border-color: orange;box-shadow: 0px 2px 2px rgba(255,255,255,0.3);}
@@ -313,6 +333,7 @@ nav>ul li{
   color: white;
   font-size: 20px
 }
+
 ::placeholder{
   color: rgb(124, 122, 122);
 }
@@ -332,9 +353,11 @@ nav>ul li{
   text-align: center;
   animation: successColor 1s linear 1;
 }
+
 .success h3 span{
   color: rgb(123, 255, 0);
 }
+
 @keyframes successColor{
   0%{
     background: rgb(22, 54, 0);
@@ -345,6 +368,7 @@ nav>ul li{
     color: rgb(22, 54, 0);
   }
 }
+
 .success::after,
 .success::before{
   content: "";
@@ -355,10 +379,12 @@ nav>ul li{
   height: 100%;
   animation: success 0.7s linear 1;
 }
+
 .success::before{
   right: 100%;
   animation: success1 0.7s linear 1;
 }
+
 @keyframes success{
   0%{right: 100%;transform: rotate(270deg);}
 }
@@ -375,12 +401,15 @@ nav>ul li{
   text-align: center;
   width: 100%;
 }
+
 .heroes>div:nth-child(even) {
   background: rgba(0, 0, 0, 0.5);
 }
+
 .heroes>div:nth-child(odd) img {
   background: rgb(0, 0, 0);
 }
+
 .hero-item{
   width: 500px;
   max-width: 90%;
@@ -395,6 +424,7 @@ nav>ul li{
   background: rgba(9, 22, 9,0.5);
   border-radius: 5px;
 }
+
 .hero-item img{
 position: absolute;
   height: 70px;
@@ -406,10 +436,12 @@ position: absolute;
   z-index: 4;
   animation: hero 1s linear 1;
 }
+
 .hero-item a{
 	background: rgb(6, 70, 6);
 	padding: 3px 20px;
 }
+
 @keyframes hero{
   0%{left: -200px;}
   20%{left: -200px;}
@@ -419,6 +451,7 @@ position: absolute;
     box-shadow: 0px 0px 10px rgb(255, 255, 255);
   }
 }
+
 .hero-item button{
   background: rgb(6, 70, 6);
   padding: 5px 20px;
@@ -441,6 +474,7 @@ position: absolute;
   font-family: 'Abel', sans-serif;
   font-size: 0.9em;
 }
+
 #newMember{
   width: 100%;
   position: absolute;
@@ -451,6 +485,7 @@ position: absolute;
   z-index: 1000;
   text-align: center;
 }
+
 #newMember>p{
   text-align: right;
   position: absolute;
@@ -459,9 +494,11 @@ position: absolute;
   color: red;
   cursor: pointer;
 }
+
 .squad>div:nth-child(even){
 	animation: load 1s linear 1;
 }
+
 .squad-cont{
   position: relative;
   display: inline-block;
@@ -477,6 +514,7 @@ position: absolute;
   transition: all 9s ease;
   animation: load1 0.9s linear 1;
 }
+
 .add-btn{
   background: green;
   display: inline-block;
@@ -490,11 +528,13 @@ position: absolute;
   cursor: pointer;
   outline: none;
 }
+
 .member-cont{
   /* background: rgba(255, 255, 255, 0.103); */
   padding: 10px;
   border-bottom: 1px solid;
 }
+
 .member-cont h3{
   display: inline-block;
 }
