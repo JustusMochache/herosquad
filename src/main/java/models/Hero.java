@@ -7,18 +7,31 @@ import java.util.ArrayList;
 public class Hero {
 
     private String name;
+
     private int age;
+
     private String power;
+
     private String weakness;
+
     private int id;
+
     private static ArrayList<Hero> instances = new ArrayList<>();
 
+
+
     public Hero(String name, Integer age, String power, String weakness) {
+
         this.name = name;
+
         this.age = age;
+
         this.power = power;
+
         this.weakness = weakness;
+
         instances.add(this);
+
         this.id = instances.size();
     }
 
@@ -38,12 +51,16 @@ public class Hero {
 
     public static Hero findById(int id) {return instances.get(id-1);}
 
+
+
     public static Hero setUpNewHero(){
         return new Hero("Simba",30,"Agility","fire");
     }
+
     public static Hero setUpNewHero1(){
         return new Hero("Scorpio",24,"Night Vision","Light");
     }
+
     public static Hero setUpNewHero2(){
         return new Hero("Leo",22,"Night Vision","Light");
     }
