@@ -23,15 +23,19 @@ public class Hero {
     }
 
     public String getName() {return this.name;}
-    //    public String getCv() {
-//        String cv = this.name && this.power;
-//    }
+
     public int getAge() {return this.age;}
+
     public String getPower() {return this.power;}
+
     public String getWeakness() {return this.weakness;}
+
     public static ArrayList<Hero> getAllInstances() {return instances;}
+
     public static void clearAllHeroes(){instances.clear();}
+
     public int getId(){return id;}
+
     public static Hero findById(int id) {return instances.get(id-1);}
 
     public static Hero setUpNewHero(){
